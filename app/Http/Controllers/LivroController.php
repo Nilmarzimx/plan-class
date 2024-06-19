@@ -4,14 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Livro;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class LivroController extends Controller
 {
     
     public function index()
     {
-      $livros = Livro::all();
+      $livros = livros::all();
       return view('livros.index', compact('livros'));
     }
     
