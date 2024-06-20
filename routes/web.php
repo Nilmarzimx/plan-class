@@ -18,6 +18,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/livros', [LivroController::class, 'index'])->name('livros.index');
+    Route::get('/livros/create', [LivroController::class, 'create'])->name('livros.create');
+    Route::post('/livros', [LivroController::class, 'store'])->name('livros.store');
+    
 });
  
 require __DIR__.'/auth.php';

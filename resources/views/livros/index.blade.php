@@ -9,34 +9,33 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div>
-                    <a href="{{ route('livros.create') }}">Criar</a>
+                    <a href="{{ route('livros.create') }}" type="submit" class="btn-white">Criar</a>
                 </div> 
 
-                <table>
+                <table class="table=auto w-full">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Autor</th>
-                            <th>Título</th>
-                            <th>Subtítulo</th>
-                            <th>Edição</th>
-                            <th>Editora</th>
-                            <th>Ano de Publicação</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">ID</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Autor</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Título</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Subtítulo</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Edição</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Editora</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Ano de Publicação</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($livros as $livro)
                             <tr>
-                                <td>{{ $student->id }}</td>
-                                <td>{{ $student->autor }}</td>
-                                <td>{{ $student->titulo }}</td>
-                                <td>{{ $student->subtitulo }}</td>
-                                <td>{{ $student->edicao }}</td>
-                                <td>{{ $student->editora }}</td>
-                                <td>{{ $student->ano_de_publicacao }}</td>
-                                
-                                
-                                
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->id }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->autor }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->titulo }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->subtitulo }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->edicao }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->editora }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->ano_de_publicacao }}</td>
+                                <td class="border px-4 py-2 text-gray-900 dark: text-white text-center">{{ $livro->acao }}</td>
                             </tr>
                         @endforeach
                             
