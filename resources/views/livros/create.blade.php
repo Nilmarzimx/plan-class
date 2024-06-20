@@ -37,8 +37,8 @@
                     </div>
 
                     <div class="mb-5">
-                        <label for="ano de publicidade" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Ano-de-publicidade</label>
-                        <input type="text" name="ano de publicidade" id="ano de publicidade" class="bg-gray-50 border border-gray-300 text-gray-900" name="Ano de Publicidade">
+                        <label for="ano_de_publiccacao" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Ano-de-publicidade</label>
+                        <input type="text" name="ano_de_publicacao" id="ano_de_publicacao" class="bg-gray-50 border border-gray-300 text-gray-900" name="Ano de Publicacão">
                     </div>     
                     <button type="submit" class="text-white bg-white-600 hover:bg-slte-1000-1000 focus:ring-4 focus-out">Salvar</button>
                     <a href="{{ route('livros.index')}}" class="text-white bg-slate-700 hover:bg-slate-1000 focus:out">Cancelar</a>

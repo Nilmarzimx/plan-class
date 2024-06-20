@@ -25,9 +25,9 @@ class LivroController extends Controller
             'titulo' => 'required|string|min:5|max:150',
             'autor' => 'required|string|min:10|max:50',
             'subtitulo' => 'required|string|min:5|max:100',
-            'edição' => 'required|string|min:5|max:100',
+            'edicao' => 'required|string|min:5|max:100',
             'editora' => 'required|string|min:5|max:50',
-            'ano de publicaçao' => 'required|integer|min:4',
+            'ano_de_publicacao' => 'required|integer|min:4',
         ]);
 
         livro::create($request->all());

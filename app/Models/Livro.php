@@ -10,9 +10,9 @@ class Livro extends Model
     use HasFactory;
 
     protected $sfillable = ['Autor',
-                            'Título',
+                            'Titulo',
                             'Subtítulo',
                             'Edição',
                             'Editora',
-                            'Ano Da Publicação'];
+                            'Ano_Da_Publicação'];
 }

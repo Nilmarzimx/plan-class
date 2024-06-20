@@ -17,11 +17,11 @@ return new class extends Migration
         Schema::create('livros', function (Blueprint $table) {
             $table->id();
             $table->string('Autor');
-            $table->string('Título');
+            $table->string('Titulo');
             $table->string('Subtítulo');
-            $table->integer('Edição');
+            $table->integer('Edicao');
             $table->string('Editora');
-            $table->integer('Ano Da Publicação');
+            $table->integer('Ano_Da_Publicação');
             $table->timestamps();
         });
     }

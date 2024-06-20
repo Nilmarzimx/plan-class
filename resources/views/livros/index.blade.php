@@ -15,11 +15,11 @@
                 <table class="table=auto w-full">
                     <thead>
                         <tr>
-                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">ID</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Id</th>
                             <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Autor</th>
-                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Título</th>
-                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Subtítulo</th>
-                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Edição</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Titulo</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Subtitulo</th>
+                            <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Edicao</th>
                             <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Editora</th>
                             <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Ano de Publicação</th>
                             <th class="px-3 py-2 text-gray-900 dark:text-white text-center">Ação</th>
