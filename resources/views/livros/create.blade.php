@@ -13,32 +13,32 @@
                     @csrf
                     <div class="mb-5">
                         <label for="autor" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Autor</label>
-                        <input type="text" name="autor" id="autor" class="bg-gray-50 border border-gray-300 text-gray-900" name="Autor">
+                        <input type="text" id="autor" class="bg-gray-50 border border-gray-300 text-gray-900" name="Autor">
                     </div>
 
                     <div class="mb-5">  
                         <label for="titulo" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Titulo</label>
-                        <input type="text" name="titulo" id="titulo" class="bg-gray-50 border border-gray-300 text-gray-900" name="Título">
+                        <input type="text"id="titulo" class="bg-gray-50 border border-gray-300 text-gray-900" name="Titulo">
                     </div>
 
                     <div class="mb-5"> 
                         <label for="subtitulo" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Subtitulo</label>
-                        <input type="text" name="subtitulo" id="subtitulo" class="bg-gray-50 border border-gray-800 text-gray-900" name="Subtítulo">
+                        <input type="text" id="subtitulo" class="bg-gray-50 border border-gray-800 text-gray-900" name="Subtitulo">
                     </div>  
 
                     <div class="mb-5">
                         <label for="edicao" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Edicao</label>
-                        <input type="text" name="edicao" id="edicao" class="bg-gray-50 border border-gray-300 text-gray-900" name="Edição">
+                        <input type="text" id="edicao" class="bg-gray-50 border border-gray-300 text-gray-900" name="Edicao">
                     </div>
 
                     <div class="mb-5">     
                         <label for="editora" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Editora</label>
-                        <input type="text" name="editora" id="editora" class="bg-gray-50 border border-gray-300 text-gray-900" name="Editora">
+                        <input type="text" id="editora" class="bg-gray-50 border border-gray-300 text-gray-900" name="Editora">
                     </div>
 
                     <div class="mb-5">
-                        <label for="ano_de_publiccacao" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Ano-de-publicidade</label>
-                        <input type="text" name="ano_de_publicacao" id="ano_de_publicacao" class="bg-gray-50 border border-gray-300 text-gray-900" name="Ano de Publicacão">
+                        <label for="ano_de_publiccacao" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">Ano de publicidade</label>
+                        <input type="text"id="ano_de_publicacao" class="bg-gray-50 border border-gray-300 text-gray-900" name="Ano_De_Publicacao">
                     </div>     
                     <button type="submit" class="text-white bg-white-600 hover:bg-slte-1000-1000 focus:ring-4 focus-out">Salvar</button>
                     <a href="{{ route('livros.index')}}" class="text-white bg-slate-700 hover:bg-slate-1000 focus:out">Cancelar</a>

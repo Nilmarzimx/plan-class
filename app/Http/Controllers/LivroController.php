@@ -21,18 +21,25 @@ class LivroController extends Controller
   
     public function store(Request $request)
     {
-        $request->validate([
-            'titulo' => 'required|string|min:5|max:150',
-            'autor' => 'required|string|min:10|max:50',
-            'subtitulo' => 'required|string|min:5|max:100',
-            'edicao' => 'required|string|min:5|max:100',
-            'editora' => 'required|string|min:5|max:50',
-            'ano_de_publicacao' => 'required|integer|min:4',
+        $validated = $request->validate([
+            'Titulo' => 'required|string|max:255',
+            'Autor' => 'required|string|max:255',
+            'Subtitulo' => 'required|string|max:255',
+            'Edicao' => 'required|string|max:255',
+            'Editora' => 'required|string|max:255',
+            'Ano_De_Publicacao' => 'required|max:2024',
         ]);
 
-        livro::create($request->all());
+        $livro = new Livro();
+        $livro->create([
+            'Titulo' => $request->Titulo,
+            'Autor' => $request->Autor,
+            'Subtitulo' => $request->Subtitulo,
+            'Edicao' => $request->Edicao,
+            'Editora' => $request->Editora,
+            'Ano_De_Publicacao' => $request->Ano_De_Publicacao,
+        ]);
         return redirect()->route('livros.index');
-
     }
 
     public function show(string $id)
